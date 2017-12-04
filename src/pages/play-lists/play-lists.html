@@ -14,5 +14,38 @@
 
 
 <ion-content padding>
+  <div class="usuario">
+    <img src="/assets/imgs/avatar.png" alt="">
+    <h1 class="titulo">nombre de usuario {{idusuario}}</h1>
+  </div>
+<ion-list>
+  
+  <ion-item (click)=goToCanciones(1)>
+    <ion-thumbnail item-start>
+      <img src="/assets/imgs/avatar.png">
+    </ion-thumbnail>
+    <h2>Nombre Playlist {{idusuario}}</h2>
+    <p># Canciones</p>
+  </ion-item>
+
+  <ion-item (click)=goToCanciones(2)>
+    <ion-thumbnail item-start>
+      <img src="/assets/imgs/avatar.png">
+    </ion-thumbnail>
+    <h2>Nombre Playlist {{idusuario}}</h2>
+    <p># Canciones</p>
+  </ion-item>
+
+  <ion-item (click)=goToCanciones(3)>
+    <ion-thumbnail item-start>
+      <img src="/assets/imgs/avatar.png">
+    </ion-thumbnail>
+    <h2>Nombre Playlist {{idusuario}}</h2>
+    <p># Canciones</p>
+  </ion-item>
+</ion-list>
+
+ 
+
 
 </ion-content>

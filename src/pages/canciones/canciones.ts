@@ -13,8 +13,11 @@ import {NavController, NavParams} from 'ionic-angular';
   templateUrl: 'canciones.html',
 })
 export class Canciones {
-
+  public PlaylistID : number;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    this.PlaylistID = this.navParams.get('playlistid');
+    console.log(this.PlaylistID);
   }
 
   ionViewDidLoad() {
